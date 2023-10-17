@@ -1,25 +1,27 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
+// import  Home  from './components/RightPart/Home';
+// import Menu  from './components/model/Main';
 import './App.css';
+import SideNavBar from './components/SideNavBar';
+
+import Main from './components/Main';
+import SearchBar from './components/SearchBar';
+import Charts from './components/Charts/BarChart';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="w-full flex bg-blue-50 ">
+      <SideNavBar/>
+      <SearchBar/>
+      <Main/>
+
+    <Charts/>
+     
+     
     </div>
   );
 }
 
 export default App;
+
+
